@@ -5,6 +5,7 @@ from gtts import gTTS # convert text to speech
 from pydub import AudioSegment # manipulating or playing with audios
 
 def textToSpeech(text, filename):
+    '''This func will convert text to speech and give it a filename'''
     myobj=gTTS(text=str(text), lang="en", slow=False)
     myobj.save(filename)
 
@@ -74,7 +75,6 @@ def developAnnouncements():
 
 
 if __name__ == "__main__":
-    print("JAI KANHAIYA LAL KI")
     print("Developing Scripts.......")
     developScripts() #No need to run this again as we have got files already
     developAnnouncements()    
